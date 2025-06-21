@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '严阵以待中文百科',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
@@ -21,6 +21,13 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
+			defaultLocale: 'zh-CN',
+			locales: {
+				root: {
+					label: '简体中文',
+					lang: 'zh-CN',
+				},
+			}
 		}),
 	],
 });
