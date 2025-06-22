@@ -1,0 +1,59 @@
+---
+// Starlight components & layouts
+import {Card, CardGrid} from '@astrojs/starlight/components';
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+// Custom components
+import Adaptive from '@components/Adaptive.astro';
+---
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>严阵以待中国百科</title>
+    <meta
+            name="description"
+            content="在严阵以待中国百科了解关于 Ready Or Not 的一切：游戏前置、成就指南、武器&弹药、任务、模组、剧情等"
+    />
+</head>
+<body>
+<StarlightPage
+        frontmatter={{
+            title: '严阵以待中国百科',
+            description: '',
+            template: 'splash',
+            hero: {
+                title: '你需要知道的<br/>关于RoN的一切',
+                tagline: '专为国内 Ready Or Not 玩家打造的百科全书',
+                actions: [
+                    {
+                        text: '快速上手',
+                        link: '/get-started/',
+                        icon: 'right-caret',
+                        variant: 'primary',
+                    },
+                ],
+            }
+        }}
+>
+
+    <CardGrid stagger>
+        <Card title='从入坑到入土' icon='bars'>
+            写点东西写点东西写点东西写点东西写点东西写点东西写点东西写点东西写点东西写点东西写点东西写点东西
+        </Card>
+        <Card title='细致无比的教学和深入' icon='apple'>
+            不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么不知道写什么
+        </Card>
+        <Card title='全方面覆盖' icon='setting'>
+            不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了不管了
+        </Card>
+        <Card title='还有什么' icon='rocket'>
+            先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧先这样放着吧
+        </Card>
+        <Card title='死脑子快想' icon='list-format'>
+            之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写之后再写
+        </Card>
+    </CardGrid>
+
+</StarlightPage>
+</body>
+</html>

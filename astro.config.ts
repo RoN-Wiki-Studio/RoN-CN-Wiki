@@ -6,8 +6,8 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: '严阵以待中文百科',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '严阵以待中国百科',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/RoN-Wiki-Studio/RoN-CN-Wiki' }],
 			sidebar: [
 				{
 					label: 'Guides',
@@ -27,7 +27,15 @@ export default defineConfig({
 					label: '简体中文',
 					lang: 'zh-CN',
 				},
-			}
+			},
+			customCss: [
+				'./src/stylesheets/global.css',
+				'./src/stylesheets/fonts.css'
+			],
+			components: {
+				SiteTitle: './src/components/rewritten/SiteTitle.astro',
+				Footer: './src/components/rewritten/Footer.astro',
+			},
 		}),
 	],
 });
