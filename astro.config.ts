@@ -10,16 +10,11 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/RoN-Wiki-Studio/RoN-CN-Wiki' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+					label: '内容',
+					autogenerate: {
+						directory: 'wiki'
+					}
+				}
 			],
 			defaultLocale: 'zh-CN',
 			locales: {
