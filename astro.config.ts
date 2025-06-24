@@ -10,10 +10,14 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/RoN-Wiki-Studio/RoN-CN-Wiki' }],
 			sidebar: [
 				{
-					label: '内容',
+					label: '入门须知',
 					autogenerate: {
-						directory: 'wiki'
+						directory: 'get-started'
 					}
+				},
+				{
+					label: '版权信息与声明',
+					slug: 'copyright-n-statement'
 				}
 			],
 			defaultLocale: 'zh-CN',
