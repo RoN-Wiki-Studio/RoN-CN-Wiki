@@ -16,6 +16,12 @@ export default defineConfig({
 					}
 				},
 				{
+					label: '规则、操作与模式指南',
+					autogenerate: {
+						directory: 'rules-n-modes'
+					}
+				},
+				{
 					label: '版权信息与声明',
 					slug: 'copyright-n-statement'
 				}

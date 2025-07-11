@@ -1,0 +1,19 @@
+---
+interface Props {
+    title: string;
+    quote?: boolean;
+    open?: boolean;
+}
+
+const {title, quote = false, open = false} = Astro.props
+---
+<details open={open}>
+    <summary>{title}</summary>
+    {
+        quote ?
+                <blockquote>
+                    <slot/>
+                </blockquote> :
+                <slot/>
+    }
+</details>

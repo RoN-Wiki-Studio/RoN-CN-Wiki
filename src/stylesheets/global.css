@@ -75,3 +75,17 @@
     --sl-sidebar-width: 20rem;
 }
 
+red {
+    color: #e45a57;
+    display: inline;
+}
+
+blue {
+    color: rgb(55, 153, 209);
+    display: inline;
+}
+
+gray {
+    color: var(--sl-color-gray-3);
+    display: inline;
+}
