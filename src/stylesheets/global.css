@@ -89,3 +89,7 @@ gray {
     color: var(--sl-color-gray-3);
     display: inline;
 }
+
+.site-title {
+    color: var(--sl-color-white);
+}
